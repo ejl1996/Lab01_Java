@@ -9,9 +9,6 @@ import java.util.Random;
  */
 public class Die {
 
-    /**
-     * The number of sides.
-     */
     private int faceValue;
     private final int numberOfSides; // New instance variable, marked as final
 
@@ -24,7 +21,7 @@ public class Die {
      * @param numberOfSides an int
      */
     public Die(int numberOfSides) {
-        final int MINIMUM_SIDES = 2; // Minimum number of sides allowed
+        final int MINIMUM_SIDES = 2; // Set minimum number of sides to two
         if (numberOfSides < MINIMUM_SIDES) {
             System.out.println("Number of sides must be at least " + MINIMUM_SIDES + ". Setting to default sides: " + DEFAULT_SIDES);
             this.numberOfSides = DEFAULT_SIDES;
