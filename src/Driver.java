@@ -32,7 +32,7 @@ public class Driver {
 
                 Die die = new Die(sides); // Create a new Die with the specified number of sides
 
-                diceList.add(die);  // Add die to the ArrayList
+                diceList.add(die);  // Add die to ArrayList
             }
 
             int sum = 0;
