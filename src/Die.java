@@ -5,7 +5,7 @@ import java.util.Random;
  *
  * @author BCIT
  * @author Emma Lee 
- * @version 2023
+ * @version
  */
 public class Die {
 
