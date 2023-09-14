@@ -4,8 +4,8 @@ import java.util.Random;
  * Die represents a six-sided die.
  *
  * @author BCIT
- * @author YOUR NAME HERE
- * @version VERSION NUMBER HERE
+ * @author Emma Lee 
+ * @version 2023
  */
 public class Die {
 
