@@ -1,7 +1,7 @@
 /**
  * Demonstrates how to use the Die class.
  *
- * @author YOUR NAME HERE
+ * @author
  * @version VERSION NUMBER HERE
  */
 public class Driver {
