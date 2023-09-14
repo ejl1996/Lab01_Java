@@ -5,13 +5,13 @@ Every program needs a README.md
 
 This is written in markdown. Read about markdown here: [markdowncheatsheet](https://www.markdownguide.org/cheat-sheet/)
 
-## Your name:
+## Your name: Emma Lee 
 
 
-## Your student number:
+## Your student number: A01246983
 
 
-## Your GitHub ID:
+## Your GitHub ID: ejl1996
 
 
-## Any important comments you'd like to make about your work:
+## Any important comments you'd like to make about your work:Lab01 for Java 
