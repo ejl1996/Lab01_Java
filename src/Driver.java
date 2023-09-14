@@ -1,8 +1,8 @@
 /**
  * Demonstrates how to use the Die class.
  *
- * @author
- * @version VERSION NUMBER HERE
+ * @author Emma Lee
+ * @version 2023
  */
 public class Driver {
 
