@@ -3,7 +3,6 @@ import java.util.Random;
 /**
  * Die represents a six-sided die.
  *
- * @author BCIT
  * @author Emma Lee
  * @version 2023
  */
