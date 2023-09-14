@@ -1,8 +1,8 @@
 /**
  * Demonstrates good use of control structures.
  *
- * @author
- * @version
+ * @author Emma Lee
+ * @version 2023
  */
 public class WarmUp {
 
