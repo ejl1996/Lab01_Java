@@ -15,12 +15,12 @@ public class WarmUp {
         int maxBars = 0;
         String maxBarsTime = "";
 
-        for (int hour = 1; hour <= 12; hour++) {
+        for (int hour = 0; hour <= 23; hour++) { // Iterate through all possible 24-hour combinations
             for (int minute = 0; minute <= 59; minute++) {
-                int totalBars = countBars(hour % 10) + countBars(minute / 10) + countBars(minute % 10);
+                int totalBars = countBars(hour / 10) + countBars(hour % 10) + countBars(minute / 10) + countBars(minute % 10);
                 if (totalBars > maxBars) {
                     maxBars = totalBars;
-                    maxBarsTime = String.format("%02d:%02d", hour, minute);
+                    maxBarsTime = String.format("%02d:%02d", hour, minute); // Time with maximum number of bars in string format
                 }
             }
         }
