@@ -64,7 +64,7 @@ public class Die {
      *
      * @return The number of sides of the die
      */
-    @SuppressWarnings("unused")
+    @SuppressWarnings("unused") // Suppress warning for 'getNumberOfSides' since it will be used for Driver.java
     public int getNumberOfSides() {
         return this.numberOfSides;
     }
