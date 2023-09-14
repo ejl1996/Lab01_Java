@@ -29,11 +29,10 @@ public class WarmUp {
         System.out.println("The total number of bars: " + maxBars);
     }
 
-    /**
-     * Counts the number of bars required to display a digit.
-     *
+    /*
+     * Calculates and returns the number of bars required to display a digit on a digital display.
      * @param digit an int
-     * @return bars[digit] as an int
+     * @return the number of bars needed to represent the specified digit.
      */
     private static int countBars(int digit) {
         int[] bars = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
