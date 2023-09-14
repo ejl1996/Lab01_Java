@@ -12,56 +12,45 @@ public class Die {
     /**
      * The number of sides.
      */
-    public static final int SIDES = 6;
+    private int faceValue;
+    private final int numberOfSides; // New instance variable, mark as final
+
+    private static final int MINIMUM_SIDES = 2; // Minimum number of sides allowed
+
     private static final Random RANDOM_NUMBER_GENERATOR = new Random();
 
-    private int faceValue;
-
     /**
-     * Constructs a Die object.
+     * Update constructor to accept numberOfSides and check for minimum sides.
+     *
+     * @param numberOfSides an int
      */
-    public Die() {
+    public Die(int numberOfSides) {
+        if (numberOfSides < MINIMUM_SIDES) {
+            throw new IllegalArgumentException("Number of sides must be at least " + MINIMUM_SIDES);
+        }
+        this.numberOfSides = numberOfSides;
         this.faceValue = 1;
     }
 
     /**
-     * Rolls this Die and returns the result.
-     *
-     * @return faceValue as an int
+     * Return a face value.
      */
     public int roll() {
-        this.faceValue = RANDOM_NUMBER_GENERATOR.nextInt(SIDES) + 1;
+        this.faceValue = RANDOM_NUMBER_GENERATOR.nextInt(numberOfSides) + 1;
         return this.faceValue;
     }
 
-    /**
-     * Returns the face value of this Die as an int.
-     *
-     * @return faceValue as an int
-     */
     public int getFaceValue() {
         return this.faceValue;
     }
 
-    /**
-     * Sets the face value of this Die to the specified value.
-     *
-     * @param value an int
-     */
-    public void setFaceValue(final int value) {
-        if (value > 0 && value <= SIDES) {
-            this.faceValue = value;
-        }
+    // New method to get the number of sides (accessor only)
+    public int getNumberOfSides() {
+        return this.numberOfSides;
     }
 
-    /**
-     * Returns a String representation of this Die.
-     *
-     * @return toString description
-     */
     @Override
     public String toString() {
         return "Die{" + "faceValue=" + this.faceValue + "}";
     }
-
 }
