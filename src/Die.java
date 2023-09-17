@@ -50,7 +50,7 @@ public class Die {
     }
 
     /**
-     * Returns a String representation of this Die.
+     * Returns a String representation of the Die.
      *
      * @return representation as a String
      */
